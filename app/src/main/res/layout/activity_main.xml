@@ -80,22 +80,14 @@
             android:text="@string/_150"
             />
 
-        <com.example.gymassistant.SetButton
+        <com.example.gymassistant.Exercise
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:maxNum="5"
-            android:layout_gravity="center_horizontal"
-            />
-        <com.example.gymassistant.SetButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:maxNum="6"
-            android:layout_gravity="center_horizontal"
-            />
-        <com.example.gymassistant.SetButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:maxNum="8"
+            app:exerciseName="test exercise"
+            app:weight="250"
+            app:set1Num="15"
+            app:set2Num="16"
+            app:set3Num="18"
             android:layout_gravity="center_horizontal"
             />
 
