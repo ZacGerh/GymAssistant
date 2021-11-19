@@ -2,18 +2,17 @@ package com.example.gymassistant
 
 import android.content.Context
 import android.util.AttributeSet
-import android.view.View
-import android.widget.Button
-import android.widget.Toast
+import androidx.appcompat.widget.AppCompatButton
 
-class SetButton (context: Context, attrs: AttributeSet) : androidx.appcompat.widget.AppCompatButton (context, attrs){
+class SetButton (context: Context, attrs: AttributeSet) : AppCompatButton (context, attrs){
 
     private var maxNum = 12
     private var currentNum = 0
+
     init {
         context.theme.obtainStyledAttributes(attrs, R.styleable.SetButton,0,0).apply {
             try {
-                maxNum = getInteger(R.styleable.SetButton_maxNum, 12)
+                maxNum = getInteger(R.styleable.SetButton_maxNum, maxNum)
                 text = currentNum.toString()
             } finally {
                 recycle()
