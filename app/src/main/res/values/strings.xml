@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">GymAssistant</string>
+    <string name="day_a">Day A</string>
+    <string name="workout">Workout</string>
+    <string name="lbs">Lbs</string>
+    <string name="set_1">Set 1</string>
+    <string name="set_2">Set 2</string>
+    <string name="set_3">Set 3</string>
+    <string name="incline_bench">Incline Bench</string>
+    <string name="weight">weight</string>
+    <string name="ohp">OHP</string>
+    <string name="lateral_raises">Lateral Raises</string>
+    <string name="skull_crushers">Skull Crushers</string>
+    <string name="day_b">Day B</string>
+    <string name="chin_ups">Chin Ups</string>
+    <string name="_0">0</string>
+    <string name="_150">150</string>
+    <string name="squat">Squat</string>
+    <string name="bent_over_flies">Bent-Over Flies</string>
+    <string name="biceps_curls">Biceps Curls</string>
 </resources>

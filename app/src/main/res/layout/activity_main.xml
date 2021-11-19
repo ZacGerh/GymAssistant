@@ -9,6 +9,211 @@
     android:layout_gravity="center_vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/day_a_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/day_a"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        >
+
+
+        <!--            Row 1-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/workout"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbs"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_1"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_2"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_3"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            />
+
+
+        <!--            Row 2-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/incline_bench"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:autofillHints="weight"
+            android:hint="@string/weight"
+            android:text="@string/_150"
+            />
+
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="5"
+            android:layout_gravity="center_horizontal"
+            />
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="6"
+            android:layout_gravity="center_horizontal"
+            />
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="8"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <!--            Row 3-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ohp"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:autofillHints="weight"
+            android:hint="@string/weight"
+            android:text="@string/_150"
+            />
+
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="5"
+            android:layout_gravity="center_horizontal"
+            />
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="6"
+            android:layout_gravity="center_horizontal"
+            />
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="8"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+        <!--            Row 4-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lateral_raises"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:autofillHints="weight"
+            android:hint="@string/weight"
+            android:text="@string/_150"
+            />
+
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="12"
+            android:layout_gravity="center_horizontal"
+            />
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="12"
+            android:layout_gravity="center_horizontal"
+            />
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="12"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <!--            Row 5-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skull_crushers"
+            android:layout_gravity="start"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:autofillHints="weight"
+            android:hint="@string/weight"
+            android:text="@string/_150"
+            />
+
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="10"
+            android:layout_gravity="center_horizontal"
+            />
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="10"
+            android:layout_gravity="center_horizontal"
+            />
+        <com.example.gymassistant.SetButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:maxNum="10"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </GridLayout>
+
+<!--        ###################################################-->
+<!--        Day B-->
+<!--        ###################################################-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,10 +222,9 @@
         android:layout_gravity="center_vertical"
         tools:context=".MainActivity">
         <TextView
-            android:id="@+id/day_a_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Day A"
+            android:text="@string/day_b"
             android:layout_gravity="center_horizontal"
             android:textSize="30sp"
             />
@@ -36,36 +240,36 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Workout"
-                android:layout_gravity="left"
+                android:text="@string/workout"
+                android:layout_gravity="start"
                 android:textSize="15sp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lbs"
-                android:layout_gravity="left"
+                android:text="@string/lbs"
+                android:layout_gravity="start"
                 android:textSize="15sp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Set 1"
-                android:layout_gravity="left"
+                android:text="@string/set_1"
+                android:layout_gravity="start"
                 android:textSize="15sp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Set 2"
-                android:layout_gravity="left"
+                android:text="@string/set_2"
+                android:layout_gravity="start"
                 android:textSize="15sp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Set 3"
-                android:layout_gravity="left"
+                android:text="@string/set_3"
+                android:layout_gravity="start"
                 android:textSize="15sp"
                 />
 
@@ -74,15 +278,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Incline Bench"
-                android:layout_gravity="left"
+                android:text="@string/chin_ups"
+                android:layout_gravity="start"
                 android:textSize="15sp"
                 />
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:text="150"
+                android:autofillHints="weight"
+                android:hint="@string/weight"
+                android:text="@string/_0"
                 />
 
             <com.example.gymassistant.SetButton
@@ -109,15 +315,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OHP"
-                android:layout_gravity="left"
+                android:text="@string/squat"
+                android:layout_gravity="start"
                 android:textSize="15sp"
                 />
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:text="150"
+                android:autofillHints="weight"
+                android:hint="@string/weight"
+                android:text="@string/_150"
                 />
 
             <com.example.gymassistant.SetButton
@@ -144,15 +352,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lateral Raises"
-                android:layout_gravity="left"
+                android:text="@string/bent_over_flies"
+                android:layout_gravity="start"
                 android:textSize="15sp"
                 />
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:text="150"
+                android:autofillHints="weight"
+                android:hint="@string/weight"
+                android:text="@string/_150"
                 />
 
             <com.example.gymassistant.SetButton
@@ -178,15 +388,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Skull Crushers"
-                android:layout_gravity="left"
+                android:text="@string/biceps_curls"
+                android:layout_gravity="start"
                 android:textSize="15sp"
                 />
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:text="150"
+                android:autofillHints="weight"
+                android:hint="@string/weight"
+                android:text="@string/_150"
                 />
 
             <com.example.gymassistant.SetButton
@@ -209,214 +421,6 @@
                 />
 
         </GridLayout>
-
-<!--        ###################################################-->
-<!--        Day B-->
-<!--        ###################################################-->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_vertical"
-            tools:context=".MainActivity">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Day B"
-                android:layout_gravity="center_horizontal"
-                android:textSize="30sp"
-                />
-
-            <GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:columnCount="5"
-                >
-
-
-                <!--            Row 1-->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Workout"
-                    android:layout_gravity="left"
-                    android:textSize="15sp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lbs"
-                    android:layout_gravity="left"
-                    android:textSize="15sp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Set 1"
-                    android:layout_gravity="left"
-                    android:textSize="15sp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Set 2"
-                    android:layout_gravity="left"
-                    android:textSize="15sp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Set 3"
-                    android:layout_gravity="left"
-                    android:textSize="15sp"
-                    />
-
-
-                <!--            Row 2-->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Chin Ups"
-                    android:layout_gravity="left"
-                    android:textSize="15sp"
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:text="0"
-                    />
-
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="5"
-                    android:layout_gravity="center_horizontal"
-                    />
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="6"
-                    android:layout_gravity="center_horizontal"
-                    />
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="8"
-                    android:layout_gravity="center_horizontal"
-                    />
-
-
-                <!--            Row 3-->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Squat"
-                    android:layout_gravity="left"
-                    android:textSize="15sp"
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:text="150"
-                    />
-
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="5"
-                    android:layout_gravity="center_horizontal"
-                    />
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="6"
-                    android:layout_gravity="center_horizontal"
-                    />
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="8"
-                    android:layout_gravity="center_horizontal"
-                    />
-
-
-                <!--            Row 4-->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Bent-Over Flies"
-                    android:layout_gravity="left"
-                    android:textSize="15sp"
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:text="150"
-                    />
-
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="12"
-                    android:layout_gravity="center_horizontal"
-                    />
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="12"
-                    android:layout_gravity="center_horizontal"
-                    />
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="12"
-                    android:layout_gravity="center_horizontal"
-                    />
-
-                <!--            Row 5-->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Biceps Curls"
-                    android:layout_gravity="left"
-                    android:textSize="15sp"
-                    />
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:text="150"
-                    />
-
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="10"
-                    android:layout_gravity="center_horizontal"
-                    />
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="10"
-                    android:layout_gravity="center_horizontal"
-                    />
-                <com.example.gymassistant.SetButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:maxNum="10"
-                    android:layout_gravity="center_horizontal"
-                    />
-
-            </GridLayout>
-
-
-
-    </LinearLayout>
-
 
     </LinearLayout>
 
