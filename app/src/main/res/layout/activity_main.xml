@@ -72,7 +72,7 @@
             android:textSize="15sp"
             />
         <EditText
-            android:id="@+id/benchLbs"
+            android:id="@+id/InclineBench"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -110,6 +110,8 @@
             android:textSize="15sp"
             />
         <EditText
+            android:id="@+id/OHP"
+            android:name="OHP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -147,6 +149,8 @@
             android:textSize="15sp"
             />
         <EditText
+            android:id="@+id/LateralRaises"
+            android:name="LateralRaises"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -183,6 +187,8 @@
             android:textSize="15sp"
             />
         <EditText
+            android:id="@+id/SkullCrushers"
+            android:name="SkullCrushers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -284,6 +290,7 @@
                 android:textSize="15sp"
                 />
             <EditText
+                android:id="@+id/ChinUps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -321,6 +328,7 @@
                 android:textSize="15sp"
                 />
             <EditText
+                android:id="@+id/Squat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -358,6 +366,7 @@
                 android:textSize="15sp"
                 />
             <EditText
+                android:id="@+id/BentFlies"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -394,6 +403,7 @@
                 android:textSize="15sp"
                 />
             <EditText
+                android:id="@+id/BicepCurls"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
