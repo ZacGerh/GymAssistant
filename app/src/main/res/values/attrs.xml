@@ -3,11 +3,8 @@
     <declare-styleable name="SetButton">
         <attr name="maxNum" format="integer" />
     </declare-styleable>
-    <declare-styleable name="Exercise">
-        <attr name="exerciseName" format="string" />
-        <attr name="weight" format="string" />
-        <attr name="set1Num" format="integer" />
-        <attr name="set2Num" format="integer" />
-        <attr name="set3Num" format="integer" />
+    <declare-styleable name="ExerciseView">
+        <attr name="exercise_name" format="string" />
+        <attr name="exercise_set" format="integer" />
     </declare-styleable>
 </resources>

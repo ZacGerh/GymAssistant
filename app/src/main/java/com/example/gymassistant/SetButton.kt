@@ -1,16 +1,20 @@
 package com.example.gymassistant
 
 import android.content.Context
+import android.util.AttributeSet
 
-class SetButton (context: Context, maxNumber: Int) : androidx.appcompat.widget.AppCompatButton(context){
+class SetButton (context: Context, attrs: AttributeSet, maxNum: Int ) : androidx.appcompat.widget.AppCompatButton (context, attrs){
 
-    private var maxNum = 12
     private var currentNum = 0
-
     init {
-        maxNum = maxNumber
-        text = currentNum.toString()
+        context.theme.obtainStyledAttributes(attrs, R.styleable.SetButton,0,0).apply {
+            try {
 
+                text = currentNum.toString()
+            } finally {
+                recycle()
+            }
+        }
         this.setOnClickListener{
             currentNum--
             if (currentNum < 0){
