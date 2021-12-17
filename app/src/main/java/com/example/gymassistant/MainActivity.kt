@@ -4,21 +4,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import org.json.JSONObject
 import java.lang.Exception
-import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val saveJson = SaveJsonObject()
 
         val benchText : EditText = findViewById(R.id.InclineBench)
-        val ohp_Text : EditText = findViewById(R.id.OHP)
+        val ohpText : EditText = findViewById(R.id.OHP)
         val lateralRaisesText : EditText = findViewById(R.id.LateralRaises)
         val skullCrushersText : EditText = findViewById(R.id.SkullCrushers)
         val chinUpText : EditText = findViewById(R.id.ChinUps)
@@ -28,7 +25,6 @@ class MainActivity : AppCompatActivity() {
 
 
         val storage = PrivateStorage(this)
-        //storage.writeWorkoutData("100")
 
         val toSet = storage.readWorkoutData()
         var json : JSONObject
@@ -49,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         benchText.setText(json.get("InclineBench") as String)
-        ohp_Text.setText(json.get("OHP") as String)
+        ohpText.setText(json.get("OHP") as String)
         lateralRaisesText.setText(json.get("LateralRaises") as String)
         skullCrushersText.setText(json.get("SkullCrushers") as String)
 
@@ -62,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
         saveButton.setOnClickListener {
             json.put("InclineBench", benchText.text.toString())
-            json.put("OHP", ohp_Text.text.toString())
+            json.put("OHP", ohpText.text.toString())
             json.put("LateralRaises", lateralRaisesText.text.toString())
             json.put("SkullCrushers", skullCrushersText.text.toString())
 
