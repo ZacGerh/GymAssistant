@@ -24,6 +24,7 @@ class SetButton (context: Context, attrs: AttributeSet) : AppCompatButton (conte
                 currentNum = maxNum
             }
             text = currentNum.toString()
+            RunningTimer.onSelectSetButton()
         }
 
     }

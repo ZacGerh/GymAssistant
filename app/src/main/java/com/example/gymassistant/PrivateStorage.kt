@@ -4,8 +4,7 @@ import android.content.Context
 import java.io.File
 import java.io.FileInputStream
 
-class PrivateStorage (context: Context) {
-    val path = context.getFilesDir()
+class PrivateStorage (path : File) {
     val workoutDir = File(path, "workout")
     val file = File(workoutDir, "Records.txt")
 

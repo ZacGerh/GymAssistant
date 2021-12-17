@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GymAssistant</string>
+    <string name="app_name">Gym Assistant</string>
     <string name="day_a">Day A</string>
     <string name="workout">Workout</string>
     <string name="lbs">Lbs</string>
@@ -18,4 +18,5 @@
     <string name="squat">Squat</string>
     <string name="bent_over_flies">Bent-Over Flies</string>
     <string name="biceps_curls">Biceps Curls</string>
+    <string name="app_logo">App Logo</string>
 </resources>
